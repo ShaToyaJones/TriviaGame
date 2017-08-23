@@ -1,9 +1,19 @@
 //variables for trivia game.
 
+//The timer for the game. 
 var timeRemaining = " "
+//The answer that the user clicks/selects.
 var answerSelected = " "
+//Display the number of incorrect answers.
 var incorrectAnswers = " "
+//Displays the number of questions that were not answered.
 var unanswered = " "
+
+function displayQuestions() {
+	$("#")
+}
+
+//The questions for game.
 var questions = [
 	"Choose a song by Total",
 	"Choose a song by Faith Evans",
@@ -19,6 +29,7 @@ var questions = [
 	]	
 	console.log(questions);
 
+//The correct answers for the questions.
 var correctAnswers = [
 	"Kissing You",
 	"Soon As I Get Home",
@@ -33,6 +44,14 @@ var correctAnswers = [
 	"Emotions",
 	]
 	console.log(correctAnswers);
+
+function startGame() {
+
+}
+
+function stopGame() {
+
+}
 
 //Create a for loop to cycle through the game questions array.
 	for (var i = 0; timeRemaining.length; i++) {
