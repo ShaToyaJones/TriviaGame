@@ -3,40 +3,49 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>TriviaGame</title>
 
-<!-- Bootstrap CDN -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-<!-- CSS stylesheet -->
-<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
-<body {
+<body>
 
-	div class="container" style="background-image: url(https://previews.123rf.com/images/vectomart/vectomart1201/vectomart120100125/11915519-illustration-de-la-musique-de-fond-dans-le-style-doodle-Banque-d%27images.jpg);">
-</div>
-}
+	<div class="container-fluid main-container">
 
-	<header>90's R&B Music Trivia</header>
+		<header>
+			<h1 class="heading">90's R&amp;B Music Trivia</h1>
+		</header>
 
+		<div class="container text-center">
+			<div id="question" class="row"></div>
 
-	<button class="btn-primary btn-lg">START</button>
+			<div id="answers" clss="row"></div>
 
-	<div class="container">
-		<div class="questions">
-			<!-- Insert Timer HERE?!?! -->
-
+			<button id="start-btn" class="btn-primary btn-lg">START</button>
 		</div>
+
 	</div>
+	
 
+		
 
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- JavaScript -->
-<script type="text/javascript" src="app.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 	</body>
 </html>

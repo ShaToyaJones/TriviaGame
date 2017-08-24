@@ -1,0 +1,20 @@
+body {
+	text-align: center;
+}
+
+.main-container {
+	background-image: url(../images/Maroper_Music.jpg);
+	height: 100vh;
+	font-weight: bold;
+	font-family: 'Baloo Bhaijaan', cursive;
+}
+
+.heading {
+	text-align: center;
+	font-weight: bolder;
+	background-color: white;
+}
+
+#question, #answers {
+	background-color: white;
+}
