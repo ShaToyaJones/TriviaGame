@@ -1,13 +1,13 @@
 //variables for trivia game.
 
-//The timer for the game. 
-var timeRemaining = 0;
-//The answer that the user clicks/selects.
-var answerSelected = " "
-//Display the number of incorrect answers.
-var incorrectAnswers = " "
-//Displays the number of questions that were not answered.
-var unanswered = 0;
+// //The timer for the game. 
+// var timeRemaining = 0;
+// //The answer that the user clicks/selects.
+// var answerSelected = " "
+// //Display the number of incorrect answers.
+// var incorrectAnswers = " "
+// //Displays the number of questions that were not answered.
+// var unanswered = 0;
 
 //Create an object containing the questions and answer bank.
 var questions = [
@@ -68,9 +68,26 @@ var questions = [
 	},
 ];
 
+//game variables as an object
+var trivia = {
+	correct: 0,
+	incorrect: 0,
+	counter: 30, 
+	countdown: function() {
+		trivia.counter --;
+		$("#counter-number").html(trivia.counter);
+
+		if (trivia.counter === 0) {
+			console.log("GAME OVER");
+			game.done();
+		}
+	}
+};
+
 //Start the game.
 function startGame() {
   console.log("Start game");
+//Then display all 11 questions at once.
   console.log(questions[0]);
   $("#question").html("<p>QUESTION:</p>" + questions[0].question);
   console.log(answers[0]);
@@ -78,15 +95,19 @@ function startGame() {
   $("#start-btn").hide();
 }
 
+
 //Push the questions and multiple choice options to the html.
 
 //Create radio buttons
-var input = $("form input: radio")
-	.wrap("<span></span>")
-	.parent();
+
 
 function processAnswer() {
 
+}
+
+//Create a function to update the score.
+function updateCorrectAnswer() {
+	document.querySelector("#correctAnswer").innerHTML = "correctAnswer: " + correctAnswer;
 }
 
 //The game will stop either once the time ends or the user has answered each question.
