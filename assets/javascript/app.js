@@ -96,7 +96,7 @@ function startGame() {
   $("#start-btn").hide();
 }
 
-
+$( ".btn" ).append( $( "answers" ) );
 //Push the questions and multiple choice options to the html.
 
 //Create radio buttons

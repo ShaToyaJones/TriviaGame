@@ -9,6 +9,11 @@ body {
 	font-family: 'Baloo Bhaijaan', cursive;
 }
 
+.btn {
+	display: block;
+	clear: both;
+}
+
 .heading {
 	text-align: center;
 	font-weight: bolder;
