@@ -9,6 +9,22 @@
 // //Displays the number of questions that were not answered.
 // var unanswered = 0;
 
+//game variables as an object
+var trivia = {
+	correct: 0,
+	incorrect: 0,
+	counter: 30, 
+	countdown: function() {
+		trivia.counter --;
+		$("#counter-number").html(trivia.counter);
+
+		if (trivia.counter === 0) {
+			console.log("GAME OVER");
+			game.done();
+		}
+	}
+};
+
 //Create an object containing the questions and answer bank.
 var questions = [
 	{
@@ -68,21 +84,6 @@ var questions = [
 	},
 ];
 
-//game variables as an object
-var trivia = {
-	correct: 0,
-	incorrect: 0,
-	counter: 30, 
-	countdown: function() {
-		trivia.counter --;
-		$("#counter-number").html(trivia.counter);
-
-		if (trivia.counter === 0) {
-			console.log("GAME OVER");
-			game.done();
-		}
-	}
-};
 
 //Start the game.
 function startGame() {
