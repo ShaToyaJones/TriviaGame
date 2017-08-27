@@ -88,19 +88,17 @@ var questions = [
 //Start the game.
 function startGame() {
   console.log("Start game");
+  $("#start-btn").hide();
+ 
 //Then display all 11 questions at once.
   console.log(questions[0]);
   $("#question").html("<p>QUESTION:</p>" + questions[0].question);
   console.log(answers[0]);
   $("#answers").html("<p>ANSWERS:</p>" + questions[0].answers);
-  $("#start-btn").hide();
+  
 }
 
-$( ".btn" ).append( $( "answers" ) );
 //Push the questions and multiple choice options to the html.
-
-//Create radio buttons
-
 
 function processAnswer() {
 

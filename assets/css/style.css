@@ -2,6 +2,22 @@ body {
 	text-align: center;
 }
 
+form {
+	background-color: white;
+}
+
+p {
+	border: royalblue;
+	border-style: solid;
+	border-width: 3px;
+	padding: 5px:;
+}
+
+fieldset {
+	background-color: lightskyblue;
+	float: right;
+}
+
 .main-container {
 	background-image: url(../images/Maroper_Music.jpg);
 	height: 100vh;
@@ -20,6 +36,6 @@ body {
 	background-color: white;
 }
 
-#question, #answers {
+/*#question, #answers {
 	background-color: white;
-}
+}*/
